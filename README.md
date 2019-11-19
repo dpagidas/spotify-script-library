@@ -20,6 +20,6 @@ Spotify script is a python script that stores the user track history also counts
 ### Development
 If you want to work on this application we’d love your pull requests and tickets on GitHub!
 
-1.If you open up a ticket, please make sure it describes the problem or feature request fully.
+1.If you open up a ticket, please make sure it describes the problem or feature request fully.                     
 2.If you send us a pull request, make sure you add a test for what you added, and make sure the full test suite runs with `make test`.
 
