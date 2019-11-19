@@ -125,8 +125,9 @@ def main():
         now_playing = sp.current_user_playing_track()
         today = str(date.today())
         add_tracks_to_list()  # Run function to add most popular songs to list
-        if now_playing['is_playing']:  # Only if spotify playing track running the functions
-            write_track_to_file(now_playing)
+        if now_playing:
+            if now_playing['is_playing']:  # Only if spotify playing track running the functions
+                write_track_to_file(now_playing)
         if today == '2019-11-21' and len(track_list) != 0:  # Set the date to stop script and make playlist
             create_playlist_with_favorite_tracks()
             print('Your tracks have been saved successfully')
